@@ -11,7 +11,12 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">✨ Estética Delicado</div>
-            <ul class="nav-menu">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#features">Serviços</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -140,5 +145,32 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Menu hambúrguer para mobile
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Fechar menu ao rolar a página
+        window.addEventListener('scroll', () => {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
