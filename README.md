@@ -2,11 +2,12 @@
 
 Uma landing page charmosa e moderna para o salão de estética Estética Delicado, especializada em alongamento de cílios e unhas em gel.
 
-## ✨ Características
+## 📱 Características
 
 - **Design Hello Kitty**: Estética fofa e delicada com cores rosa e lilás
 - **Serviços Específicos**: Alongamento de cílios (Brasileiro, Russo, Fox, Natural) e unhas em gel
-- **Responsivo**: Funciona perfeitamente em desktop e mobile
+- **Totalmente Responsivo**: Perfeito em desktop, tablet e mobile
+- **Menu Hambúrguer**: Navegação otimizada para dispositivos móveis
 - **Navegação Suave**: Rolagem suave entre seções
 - **Botões Interativos**: Links diretos para WhatsApp e Instagram
 
