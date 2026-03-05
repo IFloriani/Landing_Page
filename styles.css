@@ -1,0 +1,509 @@
+/* Variáveis CSS - Hello Kitty Theme */
+:root {
+    --primary-color: #ff69b4;
+    --secondary-color: #ffc0cb;
+    --text-color: #333;
+    --light-bg: #fff5f9;
+    --white: #ffffff;
+    --accent-lilac: #e6b3ff;
+    --accent-black: #2d2d2d;
+    --shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+    --transition: all 0.3s ease;
+}
+
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Trebuchet MS', cursive, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+    letter-spacing: 0.3px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navegação */
+.navbar {
+    background-color: var(--secondary-color);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px dashed var(--primary-color);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.3);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--accent-black);
+    transition: var(--transition);
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+    text-shadow: 2px 2px 0px rgba(255, 105, 180, 0.3);
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-lilac) 100%);
+    color: var(--white);
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '💕';
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 4rem;
+    opacity: 0.3;
+    animation: float 3s ease-in-out infinite;
+}
+
+.hero::after {
+    content: '💕';
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 4rem;
+    opacity: 0.3;
+    animation: float 3s ease-in-out infinite 0.5s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: slideDown 0.8s ease-out;
+    font-weight: 900;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    animation: slideUp 0.8s ease-out;
+    font-weight: 600;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 2px solid var(--white);
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ff1493;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+}
+
+.btn-secondary {
+    background-color: var(--accent-lilac);
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: #d699ff;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(230, 179, 255, 0.4);
+}
+
+.btn-large {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+}
+
+/* Seção de Recursos */
+.features {
+    padding: 80px 20px;
+    background: repeating-linear-gradient(
+        45deg,
+        var(--light-bg),
+        var(--light-bg) 10px,
+        rgba(255, 192, 203, 0.5) 10px,
+        rgba(255, 192, 203, 0.5) 20px
+    );
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.3);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 3px dashed var(--secondary-color);
+    position: relative;
+}
+
+.feature-card:hover {
+    transform: scale(1.08) translateY(-15px);
+    box-shadow: 0 15px 35px rgba(255, 105, 180, 0.25);
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-bg) 100%);
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.feature-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(2px 2px 4px rgba(255, 105, 180, 0.3));
+}
+
+.feature-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+.feature-card p {
+    color: var(--text-color);
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+/* Seção Sobre */
+.about {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--light-bg) 0%, rgba(255, 192, 203, 0.4) 100%);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 30px;
+    border: 3px dashed var(--secondary-color);
+    box-shadow: var(--shadow);
+}
+
+.about-content::before {
+    content: '💖';
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.about-content p {
+    font-size: 1.15rem;
+    color: var(--text-color);
+    line-height: 2;
+    font-weight: 600;
+}
+
+/* Seção CTA */
+.cta {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-lilac) 100%);
+    color: var(--white);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 5px dashed var(--white);
+    border-bottom: 5px dashed var(--white);
+}
+
+.cta::before {
+    content: '✨';
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+.cta::after {
+    content: '✨';
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+.cta h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cta p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-whatsapp {
+    background-color: #25d366 !important;
+    color: var(--white) !important;
+    border: 2px solid #25d366 !important;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e !important;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) !important;
+    color: var(--white) !important;
+    border: 2px solid transparent !important;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    border-radius: 25px !important;
+}
+
+.btn-instagram:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(193, 53, 132, 0.4);
+}
+
+/* Rodapé */
+.footer {
+    background: linear-gradient(135deg, var(--accent-lilac) 0%, #d699ff 100%);
+    color: var(--white);
+    padding: 60px 20px 20px;
+    border-top: 5px dashed var(--primary-color);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+.footer-section a:hover {
+    color: var(--white);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.footer-bottom {
+    border-top: 2px dashed var(--white);
+    padding-top: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .features h2,
+    .about-content h2,
+    .cta h2 {
+        font-size: 2.2rem;
+    }
+
+    .btn {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero::before,
+    .hero::after {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        gap: 0.5rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.9rem;
+    }
+    
+    .hero::before,
+    .hero::after {
+        font-size: 1.5rem;
+    }
+}
