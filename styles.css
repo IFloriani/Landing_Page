@@ -407,7 +407,8 @@ body {
     background: linear-gradient(135deg, var(--accent-lilac) 0%, #d699ff 100%);
     color: var(--white);
     padding: 60px 20px 20px;
-    border-top: 5px dashed var(--primary-color);
+    /* simple solid separator between content and footer */
+    border-top: 1px solid rgba(255,255,255,0.12);
 }
 
 .footer-content {
@@ -446,7 +447,7 @@ body {
 }
 
 .footer-bottom {
-    border-top: 2px dashed var(--white);
+    border-top: 1px solid rgba(255,255,255,0.12);
     padding-top: 2rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.9);
