@@ -18,5 +18,5 @@ if (Get-Command inkscape -ErrorAction SilentlyContinue) {
 }
 
 Write-Host "No supported converter found. Please install ImageMagick (https://imagemagick.org) or Inkscape (https://inkscape.org)."
-Write-Host "After installation, run this script from the project root in PowerShell:`n    .\generate_social_preview.ps1`"
+Write-Host "After installation, run this script from the project root in PowerShell:`n    .\generate_social_preview.ps1"
 exit 1
