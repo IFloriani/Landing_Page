@@ -416,8 +416,9 @@ body {
 
 /* Rodapé */
 .footer {
-    background: linear-gradient(135deg, var(--accent-lilac) 0%, #d699ff 100%);
-    color: var(--white);
+    /* stronger, darker gradient so footer content contrasts with page background */
+    background: linear-gradient(135deg, var(--primary-700) 0%, var(--accent-700) 100%);
+    color: #ffffff;
     padding: 60px 20px 20px;
     /* simple solid separator between content and footer */
     border-top: 1px solid rgba(255,255,255,0.12);
@@ -432,10 +433,10 @@ body {
 
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: var(--white);
+    color: #ffffff;
     font-weight: 800;
     font-size: 1.2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.18);
 }
 
 .footer-section ul {
@@ -454,8 +455,8 @@ body {
 }
 
 .footer-section a:hover {
-    color: var(--white);
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.18);
 }
 
 .footer-bottom {
