@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Estética - Contato</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/favicon.svg" color="#7c5cff">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+                        <div class="logo">
+                                <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="180" height="50">
+                                            <defs>
+                                                <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" style="stop-color:#7c5cff; stop-opacity:1" />
+                                                    <stop offset="100%" style="stop-color:#ff6fb5; stop-opacity:1" />
+                                                </linearGradient>
+                                                <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+                                                    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#222" flood-opacity="0.1"/>
+                                                </filter>
+                                            </defs>
+                                            <g transform="translate(10, 10)" filter="url(#softShadow)">
+                                                <path d="M30,0 Q32,8 40,10 Q32,12 30,20 Q28,12 20,10 Q28,8 30,0 Z" fill="#ff6fb5" />
+                                                <path d="M15,35 Q30,25 45,35 L40,50 Q30,60 20,50 Z" fill="url(#glowGradient)" />
+                                                <path d="M10,40 Q0,50 10,60 L25,55 Q15,50 20,45 Z" fill="#7c5cff" opacity="0.8" />
+                                                <path d="M50,40 Q60,50 50,60 L35,55 Q45,50 40,45 Z" fill="#ff6fb5" opacity="0.8" />
+                                            </g>
+                                            <text x="85" y="50" font-family="Inter, sans-serif" font-weight="700" font-size="36" fill="#7c5cff" letter-spacing="1">Glow</text>
+                                            <text x="85" y="70" font-family="Inter, sans-serif" font-weight="400" font-size="16" fill="#667085" letter-spacing="4" text-transform="uppercase">ESTÉTICA</text>
+                                        </svg>
+                                </a>
+                        </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <ul style="list-style:none; padding:0;">
+                <li><strong>Telefone:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></li>
+                <li><strong>Email:</strong> <a href="mailto:contato@glowestetica.com">contato@glowestetica.com</a></li>
+                <li><strong>Instagram:</strong> <a href="#instagram">@glowestetica</a></li>
+            </ul>
+            <h3 style="margin-top:2rem;">Localização</h3>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3553.4471710792322!2d-48.86984712353165!3d-27.047629598856396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df37ece180bed9%3A0x6d65d433746303e0!2sR.%20Quatro%20de%20Agosto%2C%2076%20-%20Centro%201%2C%20Brusque%20-%20SC%2C%2088356-480!5e0!3m2!1spt-BR!2sbr!4v1772977734569!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Glow Estética. Todos os direitos reservados. ✨💅</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

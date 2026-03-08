@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Estética - Serviços</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/favicon.svg" color="#7c5cff">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+                        <div class="logo">
+                                <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="180" height="50">
+                                            <defs>
+                                                <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" style="stop-color:#7c5cff; stop-opacity:1" />
+                                                    <stop offset="100%" style="stop-color:#ff6fb5; stop-opacity:1" />
+                                                </linearGradient>
+                                                <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+                                                    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#222" flood-opacity="0.1"/>
+                                                </filter>
+                                            </defs>
+                                            <g transform="translate(10, 10)" filter="url(#softShadow)">
+                                                <path d="M30,0 Q32,8 40,10 Q32,12 30,20 Q28,12 20,10 Q28,8 30,0 Z" fill="#ff6fb5" />
+                                                <path d="M15,35 Q30,25 45,35 L40,50 Q30,60 20,50 Z" fill="url(#glowGradient)" />
+                                                <path d="M10,40 Q0,50 10,60 L25,55 Q15,50 20,45 Z" fill="#7c5cff" opacity="0.8" />
+                                                <path d="M50,40 Q60,50 50,60 L35,55 Q45,50 40,45 Z" fill="#ff6fb5" opacity="0.8" />
+                                            </g>
+                                            <text x="85" y="50" font-family="Inter, sans-serif" font-weight="700" font-size="36" fill="#7c5cff" letter-spacing="1">Glow</text>
+                                            <text x="85" y="70" font-family="Inter, sans-serif" font-weight="400" font-size="16" fill="#667085" letter-spacing="4" text-transform="uppercase">ESTÉTICA</text>
+                                        </svg>
+                                </a>
+                        </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Nossos Serviços de Cílios</h2>
+            <div class="features-grid" style="justify-content: center; max-width: 700px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 0.3rem;">
+                <div class="feature-card" style="flex: 1 1 48%; max-width: 340px; min-width: 220px; margin: 0.15rem;">
+                    <div class="feature-icon">✨</div>
+                    <h3>Alongamento Cílios</h3>
+                    <p>Transforme seu olhar com nossos alongamentos de cílios premium</p>
+                </div>
+                <div class="feature-card" style="flex: 1 1 48%; max-width: 340px; min-width: 220px; margin: 0.15rem;">
+                    <div class="feature-icon">💎</div>
+                    <h3>Volume Brasileiro</h3>
+                    <p>Cílios naturais e volumosos para um efeito clássico elegante</p>
+                </div>
+                <div class="feature-card" style="flex: 1 1 48%; max-width: 340px; min-width: 220px; margin: 0.15rem;">
+                    <div class="feature-icon">👑</div>
+                    <h3>Volume Russo</h3>
+                    <p>Cílios super volumosos e impactantes com efeito dramaticamente lindo</p>
+                </div>
+                <div class="feature-card" style="flex: 1 1 48%; max-width: 340px; min-width: 220px; margin: 0.15rem;">
+                    <div class="feature-icon">🦊</div>
+                    <h3>Volume Fox</h3>
+                    <p>Efeito felino perfeito para um olhar mais expressivo e marcante</p>
+                </div>
+            </div>
+            <div class="features-grid" style="justify-content: center; max-width: 350px; margin: 2.2rem auto 0 auto; display: flex;">
+                <div class="feature-card" style="flex: 1 1 100%; max-width: 340px; min-width: 220px; margin: 0.15rem;">
+                    <div class="feature-icon">🌸</div>
+                    <h3>Volume Natural</h3>
+                    <p>Para quem ama discrição com um toque de sofisticação delicada</p>
+                </div>
+            </div>
+            <h2 style="margin-top: 80px;">Nossos Serviços de Unhas</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💅</div>
+                    <h3>Alongamento Unhas em Gel</h3>
+                    <p>Unhas perfeitas, resistentes e brilhantes com gel de qualidade premium</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Glow Estética. Todos os direitos reservados. ✨💅</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

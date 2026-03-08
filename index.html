@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glow Estética - Cílios e Unhas em Gel</title>
-    <link rel="icon" href="assets/icon.png" type="image/png">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="mask-icon" href="assets/icon.png" color="#000000">
+    <link rel="mask-icon" href="assets/favicon.svg" color="#7c5cff">
     <meta name="theme-color" content="#ffffff">
     <!-- Open Graph / Social preview tags - replace social-preview.png and site URL with your production values -->
     <meta property="og:type" content="website">
@@ -28,18 +28,40 @@
 <body>
     <!-- Navegação -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">✨ Glow Estética</div>
+                <div class="container">
+                        <div class="logo">
+                                <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="180" height="50">
+                                            <defs>
+                                                <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" style="stop-color:#7c5cff; stop-opacity:1" />
+                                                    <stop offset="100%" style="stop-color:#ff6fb5; stop-opacity:1" />
+                                                </linearGradient>
+                                                <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+                                                    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#222" flood-opacity="0.1"/>
+                                                </filter>
+                                            </defs>
+                                            <g transform="translate(10, 10)" filter="url(#softShadow)">
+                                                <path d="M30,0 Q32,8 40,10 Q32,12 30,20 Q28,12 20,10 Q28,8 30,0 Z" fill="#ff6fb5" />
+                                                <path d="M15,35 Q30,25 45,35 L40,50 Q30,60 20,50 Z" fill="url(#glowGradient)" />
+                                                <path d="M10,40 Q0,50 10,60 L25,55 Q15,50 20,45 Z" fill="#7c5cff" opacity="0.8" />
+                                                <path d="M50,40 Q60,50 50,60 L35,55 Q45,50 40,45 Z" fill="#ff6fb5" opacity="0.8" />
+                                            </g>
+                                            <text x="85" y="50" font-family="Inter, sans-serif" font-weight="700" font-size="36" fill="#7c5cff" letter-spacing="1">Glow</text>
+                                            <text x="85" y="70" font-family="Inter, sans-serif" font-weight="400" font-size="16" fill="#667085" letter-spacing="4" text-transform="uppercase">ESTÉTICA</text>
+                                        </svg>
+                                </a>
+                        </div>
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#features">Serviços</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
     </nav>
@@ -48,10 +70,33 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Realce Sua Beleza Natural</h1>
-                <p>Cílios perfeitos e unhas impecáveis com os melhores serviços de estética</p>
-                <a href="#agendamento" class="btn btn-primary">Agendar Agora</a>
-                <a href="#features" class="btn btn-primary">Conhecer Serviços</a>
+                                <div class="hero-logo" style="margin-bottom: 1.2rem; display: flex; justify-content: center;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="180" height="50">
+                                            <defs>
+                                                <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" style="stop-color:#7c5cff; stop-opacity:1" />
+                                                    <stop offset="100%" style="stop-color:#ff6fb5; stop-opacity:1" />
+                                                </linearGradient>
+                                                <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+                                                    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#222" flood-opacity="0.1"/>
+                                                </filter>
+                                            </defs>
+                                            <g transform="translate(10, 10)" filter="url(#softShadow)">
+                                                <path d="M30,0 Q32,8 40,10 Q32,12 30,20 Q28,12 20,10 Q28,8 30,0 Z" fill="#ff6fb5" />
+                                                <path d="M15,35 Q30,25 45,35 L40,50 Q30,60 20,50 Z" fill="url(#glowGradient)" />
+                                                <path d="M10,40 Q0,50 10,60 L25,55 Q15,50 20,45 Z" fill="#7c5cff" opacity="0.8" />
+                                                <path d="M50,40 Q60,50 50,60 L35,55 Q45,50 40,45 Z" fill="#ff6fb5" opacity="0.8" />
+                                            </g>
+                                            <text x="85" y="50" font-family="Inter, sans-serif" font-weight="700" font-size="36" fill="#7c5cff" letter-spacing="1">Glow</text>
+                                            <text x="85" y="70" font-family="Inter, sans-serif" font-weight="400" font-size="16" fill="#667085" letter-spacing="4" text-transform="uppercase">ESTÉTICA</text>
+                                        </svg>
+                                </div>
+                                <h1>Realce Sua Beleza Natural</h1>
+                                <p>Cílios perfeitos e unhas impecáveis com os melhores serviços de estética</p>
+                                <div class="hero-buttons" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.2rem;">
+                                        <a href="#agendamento" class="btn btn-primary">Agendar Agora</a>
+                                        <a href="#features" class="btn btn-primary">Conhecer Serviços</a>
+                                </div>
             </div>
         </div>
     </section>
@@ -60,28 +105,30 @@
     <section class="features" id="features">
         <div class="container">
             <h2>Nossos Serviços de Cílios</h2>
-            <div class="features-grid">
-                <div class="feature-card">
+            <div class="features-grid" style="justify-content: center; max-width: 700px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 0.3rem;">
+                <div class="feature-card" style="flex: 1 1 48%; max-width: 340px; min-width: 220px; margin: 0.15rem;">
                     <div class="feature-icon">✨</div>
                     <h3>Alongamento Cílios</h3>
                     <p>Transforme seu olhar com nossos alongamentos de cílios premium</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" style="flex: 1 1 48%; max-width: 340px; min-width: 220px; margin: 0.15rem;">
                     <div class="feature-icon">💎</div>
                     <h3>Volume Brasileiro</h3>
                     <p>Cílios naturais e volumosos para um efeito clássico elegante</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" style="flex: 1 1 48%; max-width: 340px; min-width: 220px; margin: 0.15rem;">
                     <div class="feature-icon">👑</div>
                     <h3>Volume Russo</h3>
                     <p>Cílios super volumosos e impactantes com efeito dramaticamente lindo</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" style="flex: 1 1 48%; max-width: 340px; min-width: 220px; margin: 0.15rem;">
                     <div class="feature-icon">🦊</div>
                     <h3>Volume Fox</h3>
                     <p>Efeito felino perfeito para um olhar mais expressivo e marcante</p>
                 </div>
-                <div class="feature-card">
+            </div>
+            <div class="features-grid" style="justify-content: center; max-width: 350px; margin: 2.2rem auto 0 auto; display: flex;">
+                <div class="feature-card" style="flex: 1 1 100%; max-width: 340px; min-width: 220px; margin: 0.15rem;">
                     <div class="feature-icon">🌸</div>
                     <h3>Volume Natural</h3>
                     <p>Para quem ama discrição com um toque de sofisticação delicada</p>
@@ -118,14 +165,32 @@
     <section class="cta" id="agendamento">
         <div class="container">
             <h2>Agende Seu Atendimento!</h2>
-            <p>Transforme-se com nossos serviços exclusivos de estética</p>
+            <p style="font-size:1.15rem; margin-bottom:2rem; animation: fadeInUp 1.2s both 0.2s;">Garanta já seu horário e viva a experiência Glow!</p>
             <div class="cta-buttons">
-                <a href="https://wa.me/5511999999999" class="btn btn-whatsapp btn-large" target="_blank">
-                    📱 Agendar via WhatsApp
-                </a>
-                <a href="https://instagram.com/glowestetica" class="btn btn-instagram btn-large" target="_blank">
-                    📸 Seguir no Instagram
-                </a>
+                <a href="#" class="btn btn-primary" style="animation: fadeInUp 1.2s both 0.3s;">Agendar Agora</a>
+                <a href="#features" class="btn btn-secondary" style="animation: fadeInUp 1.2s both 0.4s;">Ver Serviços</a>
+            </div>
+        </div>
+        <!-- Detalhes decorativos animados já aplicados via CSS -->
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>Depoimentos de Clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">“Simplesmente amei o resultado dos meus cílios! Atendimento impecável e ambiente super aconchegante.”</p>
+                    <span class="testimonial-author">— Mariana Souza</span>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">“Minhas unhas ficaram perfeitas e duraram semanas. Recomendo de olhos fechados!”</p>
+                    <span class="testimonial-author">— Camila Ribeiro</span>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">“Equipe muito atenciosa, trabalho delicado e de alta qualidade. Já virei cliente fiel!”</p>
+                    <span class="testimonial-author">— Juliana Lima</span>
+                </div>
             </div>
         </div>
     </section>
@@ -202,5 +267,6 @@
             }
         });
     </script>
+    <script src="scripts/depoimentos.js"></script>
 </body>
 </html>
