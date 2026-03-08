@@ -208,10 +208,10 @@ body {
 /* Botões */
 .btn {
     display: inline-block;
-    padding: 10px 22px;
+    padding: 12px 36px;
     margin: 0 8px;
     border: none;
-    border-radius: 12px;
+    border-radius: 28px;
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
@@ -244,8 +244,9 @@ body {
 }
 
 .btn-large {
-    padding: 14px 36px;
+    padding: 16px 44px;
     font-size: 1rem;
+    min-width: 180px;
 }
 
 /* Seção de Recursos */
@@ -403,6 +404,8 @@ body {
     border: 1px solid rgba(255,255,255,0.08);
     box-shadow: 0 10px 24px rgba(15, 120, 60, 0.16), inset 0 1px 0 rgba(255,255,255,0.06);
     position: relative;
+    padding: 12px 36px;
+    border-radius: 28px;
 }
 .btn-whatsapp::before {
     content: '';
@@ -435,7 +438,8 @@ body {
     border: 1px solid rgba(255,255,255,0.08) !important;
     box-shadow: 0 10px 24px rgba(150,40,120,0.12), inset 0 1px 0 rgba(255,255,255,0.06);
     position: relative;
-    border-radius: 12px !important;
+    padding: 12px 36px;
+    border-radius: 28px !important;
 }
 .btn-instagram::before {
     content: '';
