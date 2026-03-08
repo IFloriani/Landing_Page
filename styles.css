@@ -725,7 +725,7 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    height: 360px; /* default desktop height */
+    height: 320px; /* slightly reduced default height */
 }
 .map-responsive iframe {
     position: absolute;
@@ -737,9 +737,9 @@ body {
 }
 
 @media (max-width: 768px) {
-    .map-responsive { height: 260px; }
+    .map-responsive { height: 220px; }
 }
 
 @media (min-width: 1200px) {
-    .map-responsive { height: 420px; }
+    .map-responsive { height: 380px; }
 }
